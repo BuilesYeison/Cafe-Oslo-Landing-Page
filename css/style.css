@@ -1,0 +1,106 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{box-sizing: border-box;padding: 0;margin: 0;scroll-behavior: smooth;}
+
+/*Navegador*/
+.nav-interaction{padding: 15px 0;background-color: #d03b40;}/*cuando se scrollea se cambia el diseño del nav*/
+nav{min-width:100% ; position: fixed;transition: 0.4s; padding: 10px 0;} /*Agregar padding arriba y abajo y cambiar color de fondo para cuando se haga scroll*/
+.nav-container{width: 90%;margin: auto;display: flex;justify-content: space-between;position: relative;}
+nav img{width: 200px;}
+nav .bx{color: #f5f0ed;background-color: #d03b40;font-size: 44px;position: absolute;right: 0px;top: 10px; z-index: 2;}
+nav .bx-x{z-index: 1;}
+nav ul{position: absolute;right: -30px;top: -20px;background-color: #d03b40;padding: 100px 70px 15px 15px;transform: translateY(-100%);transition: 0.4s;}
+nav ul li{margin-bottom: 15px;}
+nav ul li a{text-decoration: none;color: #f5f0ed;border-bottom:1px solid #f5f0ed;}
+.toggle-menu{transform: translateY(0);}
+.toggle-bx-menu{display: none;}
+
+/*Header con imagen de fondo parallax y un filtro oscuro*/
+header{background-image: url("../img/Fondo1.jpg");background-attachment: fixed; min-height: 100vh;background-size: cover;background-position: center;display: flex;justify-content: center;background-color: rgba(0,0,0,0.4);background-blend-mode: soft-light;}
+header .text-container{width: 90%;margin: auto;text-align: center; color: #f5f0ed;}
+header .text-container h1{font-size: 44px;font-weight: bolder;}
+header .text-container hr{width: 20%;margin: 20px auto;border: 1px solid #f5f0ed;}
+header .text-container p{font-size: 24px;font-weight: 400; line-height: 32px;}
+
+/*About Section*/
+.about .about-item{min-height: 50vh; display: flex; justify-content: center;align-items: center;}
+.about .text-container{text-align: center;width: 90%;margin: auto;}
+.about .text-container h2{font-size: 28px; font-weight: bold;margin-bottom: 15px;}
+.about .text-container p{font-size: 16px; line-height: 25px;}
+.red-container{background-color: #d03b40;color: #f5f0ed;}
+.beige-container{background-color: #ded6c0;color: #d03b40;}
+
+/*discover section*/
+.discover{min-height: 100vh; background-image: url("../img/Fondo2.jpg");background-position: 0%;background-size: cover; background-attachment: fixed;background-color: rgba(0,0,0,0.4);background-blend-mode: soft-light;display: flex; justify-content: center;align-items: center;}
+.discover .text-container{width: 90%;margin: auto;color: #f5f0ed; text-align: center;}
+.discover .text-container h2{font-size: 28px; font-weight: bold;}
+.discover .text-container hr{border: 2px solid #f5f0ed; width: 20%;margin: 20px auto;}
+.discover .text-container p{font-size: 16px; line-height: 25px; font-weight: 400;margin-bottom: 40px;}
+.discover .cta{text-decoration: none; color: #f5f0ed;border: 2px solid #f5f0ed; border-radius: 12px; padding: 15px 5vw; transition: 0.4s;}
+.discover .cta:hover{background-color: #d03b40;}
+.discover .cta:active{background-color: #8b292c;}
+
+/*Cards section*/
+.cards{ background-color: #f5f0ed;}
+.card{min-height: 50vh;display: flex;justify-content: center;align-items: center;}
+.card .text-container{width: 90%;margin: auto; color: #3c3c3b; text-align: center;}
+.card .text-container img{width: 100px;}
+.card .text-container h3{font-size: 24px;font-weight: bold;text-align: left;margin: 20px 0;}
+.card .text-container p{text-align: left;line-height: 25px;}
+
+/*contact*/
+.contact .text-container p{font-size: 20px;}
+.bold-text{font-size: 24px;font-weight: bold;}
+
+/*footer*/
+footer{display: flex; justify-content: center; align-items: center;background-color: #3c3c3b;}
+footer .text-container{color: #f5f0ed; width: 90%; margin: 25px auto;text-align: center; line-height: 20px;}
+footer .text-container a{text-decoration: none; font-weight: bold; color: #f5f0ed;}
