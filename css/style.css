@@ -50,6 +50,28 @@ table {
 
 *{box-sizing: border-box;padding: 0;margin: 0;scroll-behavior: smooth;}
 
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track { 
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.603);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgb(163, 163, 163);
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(117, 117, 117); 
+  }
+
 /*Navegador*/
 .nav-interaction{padding: 15px 0;background-color: #d03b40;}/*cuando se scrollea se cambia el diseño del nav*/
 nav{min-width:100% ; position: fixed;transition: 0.4s; padding: 10px 0;} /*Agregar padding arriba y abajo y cambiar color de fondo para cuando se haga scroll*/
